@@ -1,0 +1,10 @@
+#!/bin/bash
+
+FILE=./tools/.env
+if [ ! -f "$FILE" ]; then
+  echo "Copying .env.example to .env"
+  cp tools/.env.example tools/.env
+fi
+
+docker build -t blogpop-manager .
+
