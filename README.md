@@ -11,8 +11,15 @@ https://github.com/owenvoke/laravel-zero-docker
 3.  Add your blogpop api token to the .env file
 
 ## Install Script
+
+### Mac/Linux
 ```bash
 ./install
+```
+
+### Windows
+```bash
+install.bat
 ```
 
 ## Configuring your env
@@ -24,8 +31,16 @@ BLOGPOP_API_TOKEN=your-api-token
 # Blogpop CLI
 
 You can use the blogpop CLI tool to generate new authors, blogs, and posts.  You can additionally sync your blogs with blogpop using this tool.
+Depending on if you are using mac/linux or windows you will need to use the appropriate version of the blogpop command for all requests.
+
+Mac/Linux
 ```bash
 ./blogpop <command> [options]
+```
+
+Windows
+```bash
+blogpop.bat <command> [options]
 ```
 
 ## Commands
