@@ -1,3 +1,4 @@
 #!/bin/bash
+cp ./.env tools/.env
 
-docker run -it --rm -v $(pwd):/app blogpop-manager php tools/tools boot "$@"
+docker run -it --rm -v $(pwd):/app -v vendor_vol:/app/tools/vendor blogpop-manager php tools/tools boot "$@"

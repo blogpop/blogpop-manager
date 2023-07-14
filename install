@@ -1,10 +1,13 @@
 #!/bin/bash
 
-FILE=./tools/.env
+FILE=./.env
 if [ ! -f "$FILE" ]; then
   echo "Copying .env.example to .env"
-  cp tools/.env.example tools/.env
+  cp tools/.env.example ./.env
 fi
+
+mkdir authors
+mkdir blogs
 
 docker build -t blogpop-manager .
 

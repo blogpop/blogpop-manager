@@ -43,7 +43,6 @@ class HelpCommand extends Command
         $this->line('');
         $this->info("<fg=yellow>USAGE: <fg=white>./blogpop <command> [options]");
         $this->line('');
-        $this->info("<fg=green>     auth            <fg=white>Sets the blogpop API Token");
         $this->info("<fg=green>     help:me         <fg=white>Print out the help screen");
         $this->line('');
         $this->info("<fg=green>     sync            <fg=white>Syncs your blogs with the blogpop server");

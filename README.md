@@ -8,16 +8,17 @@ https://github.com/owenvoke/laravel-zero-docker
 
 1.  Install Docker (https://www.docker.com/products/docker-desktop/)
 2.  Run the install script
-3.  Run the auth command with your blogpop api key
+3.  Add your blogpop api token to the .env file
 
 ## Install Script
 ```bash
 ./install
 ```
 
-## Auth Command
+## Configuring your env
+The install script created a .env file for you.  You will need to open this file and add in your blogpop api token.  To get a blogpop api token you will need to register at https://blogpop.io/register
 ```bash
-./blogpop auth <api_key>
+BLOGPOP_API_TOKEN=your-api-token
 ```
 
 # Blogpop CLI
@@ -31,7 +32,6 @@ You can use the blogpop CLI tool to generate new authors, blogs, and posts.  You
 
 | Command | Description |
 | --- | --- |
-| auth | Authenticate with blogpop |
 | help:me | Print out the help screen |
 | sync | Syncs your blogs with the blogpop server |
 | new:author | Creates a new author |
