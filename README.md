@@ -12,7 +12,7 @@ https://github.com/owenvoke/laravel-zero-docker
 
 ## Install Script
 ```bash
-./install.sh
+./install
 ```
 
 ## Auth Command
